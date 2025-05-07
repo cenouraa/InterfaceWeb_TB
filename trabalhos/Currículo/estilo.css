@@ -1,0 +1,51 @@
+p{
+    padding: 0px 20px;
+    text-align: start;
+}
+h2{
+    margin-top: 100px;
+}
+body{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+a:link{
+    color: darkgoldenrod;
+}
+a:visited{
+    color: crimson;
+}
+a:hover{
+    background-color: violet;
+    font-size: 25px;
+}
+a:active{
+    background-color: coral;
+}
+h2:hover{
+    font-size: 35px;
+    color: crimson;
+    background-color: azure;
+}
+ul li{
+    list-style-type: georgian;
+    color: blueviolet;
+}
+ul li:hover{
+    background-color: azure;
+}
+ol li{
+    list-style: lower-greek;
+    color: blue;
+}
+ol li:hover{
+    background-color: burlywood;
+}
+.direita{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+}
+.texto-direita{
+    text-align: end;
+}

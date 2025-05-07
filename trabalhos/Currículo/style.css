@@ -1,0 +1,72 @@
+body{
+    background-image: url(img/capibara.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #0c1014;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+header{
+    flex-direction: column;
+    padding: 10px 16px;
+    align-items: center;
+}
+.header__nav {
+    display: flex; 
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    position: relative;
+}
+.header__nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+.header__nav a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header__nav a:hover{
+    text-decoration: underline;
+}
+.header__intro{
+    text-align: center;
+    margin: 220px 0;
+}
+.header__intro h1{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 6.4em;
+    text-shadow: #f1f1f1 0px 0px 10px, #e4cd99 0px 0px 20px;
+    color: #332f2b;
+}
+.header__intro p{
+    font-size: 2.8em;
+    margin: 10px;
+    font-weight: 20px;
+    text-shadow: #f1f1f1 0px 0px 10px, #393e3d 0px 0px 20px;
+}
+.header__image {
+    position: absolute;
+    height: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+}
+.content{
+    background-color: rgba(246,246,246,0.3);
+}
+.content section{
+    margin-bottom: 60px;
+}
+.content section h2{
+    font-size: 3em;
+    margin: 0;
+    padding: 10px 0;
+    color: #332f2b;
+}

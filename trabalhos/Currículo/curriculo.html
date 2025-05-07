@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        html{
+            font-size: 62.5%;
+        }
+        h1{
+            font-size: 2.4em;
+        }
+        p, a{
+            /*font-size: 16px; tamanho padrao entre aspas (nao é ideal usar px e pt pra responsividade*/
+            font-size: 1.6em; /*1em = 10px*/
+        }
+    </style>
+</head>
+<body>
+    <!--id, hr, sei la mais o que-->
+    <header class="header">
+        <img class="header__image" src="img/scott.jpg" alt="eu literalmente">
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#education-a">Formação</a></li>
+                <li><a href="#exp-a">Experiências</a></li>
+                <li><a href="#skills-a">Hab. e Competências</a> </li>
+                <li><a href="#language-a">Idiomas</a></li>
+                <li><a href="#contact-a">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="header__intro">
+            <h1>Matheus Gonzaga</h1>
+            <p>Cientista da Computação (em formação)</p>
+        </div>
+    </header>
+    <main class="content">
+        <section class="content__education" id="education-a">
+            <h2 class="content__title">Formação</h2>
+            <ul class="content__list">
+                <li>
+                    <p><b>2020 - 2023 | Instituto Federal do Paraná</b></p>
+                    <p>Técnico em Informática</p>
+                </li>
+                <li>
+                    <p><b>2023 - atual | Universidade Estadual do Centro-Oeste</b></p>
+                    <p>Bacharelado em Ciência da Computação</p>
+                </li>
+            </ul>
+        </section>
+        <section class="content__exp" id="exp-a">
+            <h2 class="content__title">Experiências</h2>
+            <ul class="content__list">
+                <li>
+                    <p><b>2024 - atual | Projeto de Extensão</b></p>
+                    <p>Fábrica de Software</p>
+                </li>
+            </ul>
+        </section>
+        <section class="content__skills" id="skills-a">
+            <h2 class="content__title">Habilidades e Competências</h2>
+            <ul class="content__list">
+                <li>
+                    <p>Programação em <b><em>C++</em></b>, <b><em>Laravel-PHP</em></b></p>
+                </li>
+                <li>
+                    <p>Bancos de dados <b><em>MySQL</em></b> e <b><em>PostgreSQL</em></b></p>
+                </li>
+                <li>
+                    <p>Comunicativo e ativo em trabalhos em grupo</p>
+                </li>
+            </ul>
+        </section>
+        <section class="content__language" id="language-a">
+            <h2 class="content__title">Idiomas</h2>
+            <ul class="content__list">
+                <li>
+                    <p>Inglês - <b>Fluente</b></p>
+                </li>
+                <li>
+                    <p>Mandarim - <b>Básico</b></p>
+                </li>
+            </ul>
+        </section>
+        <section class="content__contact" id="contact-a">
+            <h2 class="content__title">Contato</h2>
+            <ul class="content__list">
+                <li>
+                    <a href="mailto:matheus.gonzaga186@gmail.com" target="_blank">matheus.gonzaga186@gmail.com</a></li>
+                <li>
+                    <a href="https://github.com/cenouraa">GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
