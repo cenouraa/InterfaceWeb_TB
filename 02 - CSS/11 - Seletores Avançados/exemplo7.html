@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes</title>
+    <style>
+        li::marker{
+            content: "🍆 ";
+            font-size: 2em;
+            color: red;
+            background-color: blueviolet;
+        }
+        a:focus, a:hover{
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+    </ul>
+</body>
+</html>

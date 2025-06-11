@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        a[title="preenchido"] { /*pelo nome do titulo*/
+            background-color: red;
+        }
+        a[href^="http"]{ /*pelo link do href começando com http*/
+            background-color: gold;
+        }
+        a[href$="html"]{ /*termina pela extensao do arquivo*/
+            background-color: green;
+        }
+        a[href*="exemplo"]{ /*sei la porra*/
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <a href="">sem title</a>
+        <a href="" title="">com title</a>
+        <a href="" title="preenchido">com title preenchido</a>
+        <a href="exemplo1.html">link interno</a>
+        <a href="http://www.unicentro.br">link externo</a>
+    </article>
+</body>
+</html>

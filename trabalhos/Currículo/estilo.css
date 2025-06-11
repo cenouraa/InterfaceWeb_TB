@@ -1,51 +1,186 @@
-p{
-    padding: 0px 20px;
-    text-align: start;
-}
-h2{
-    margin-top: 100px;
+/*ESTILOS GLOBAIS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    padding-right: 100px;
-    padding-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 1.6rem;
+    background-image: url(img/caras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-a:link{
-    color: darkgoldenrod;
+.header{
+    display: grid;
+    grid-template-areas: 
+        "image intro"
+        "nav nav";
+    grid-template-columns: auto 1fr;
+    gap: 1.6rem;
+    margin-bottom: 2.4rem;
+    background-color: #fff;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.1);
 }
-a:visited{
-    color: crimson;
+.header__image{
+    grid-area: image;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.3rem solid #4a6fa5;
 }
-a:hover{
-    background-color: violet;
-    font-size: 25px;
+.header__intro h1{
+    color: #2c3e50;
+    margin-bottom: 0.4rem;
 }
-a:active{
-    background-color: coral;
+.header__intro p{
+    color: #7f8c8d;
+    font-size: 1.4rem;
 }
-h2:hover{
-    font-size: 35px;
-    color: crimson;
-    background-color: azure;
+.header__intro{
+    grid-area: intro;
+    align-self: center;
 }
-ul li{
-    list-style-type: georgian;
-    color: blueviolet;
+.header__nav{
+    grid-area: nav;
 }
-ul li:hover{
-    background-color: azure;
+.header__nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
 }
-ol li{
-    list-style: lower-greek;
-    color: blue;
+.header__nav a{
+    text-decoration: none;
+    color: #4a6fa5;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
 }
-ol li:hover{
-    background-color: burlywood;
+.header__nav a:hover{
+    background-color: #e0e9f5;
 }
-.direita{
-    display: block;
-    width: fit-content;
-    margin-left: auto;
+.content{
+    display: grid;
+    gap: 2.4rem;
+    background-color: #fff;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.1);
 }
-.texto-direita{
-    text-align: end;
+.content__title{
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.2rem solid #e0e9f5;
+}
+.content__list{
+    list-style: none;
+}
+.content__list li{
+    margin-bottom: 1.2rem;
+}
+.content__list p{
+    margin-bottom: 0.4rem;
+}
+.content__list a:hover{
+    color: #2c3e50;
+    text-decoration: underline;
+}
+.content__list a{
+    color: #4a6fa5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/*MEDIA PARA TABLETS*/
+@media (min-width: 76.8rem){
+    .header{
+        grid-template-columns: 12rem 1fr;
+        grid-template-areas: 
+            "image intro"
+            "image nav";
+    }
+    .header__image{
+        width: 12rem;
+        height: 12rem;
+    }
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content__education{
+        grid-column: 1;
+    }
+    .content__exp{
+        grid-column: 2;
+    }
+    .content__skills{
+        grid-column: 1;
+    }
+    .content__language{
+        grid-column: 2;
+    }
+    .content__contact{
+        grid-column: span 2;
+    }
+}
+
+/*MEDIA DESKTOP*/
+@media (min-width: 102.4rem){
+    body{
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 2.4rem;
+    }
+    .header{
+        grid-template-areas: "image intro nav";
+        grid-template-columns: 15rem 1fr auto;
+        align-items: center;
+    }
+    .header__image{
+        width: 15rem;
+        height: 15rem;
+    }
+    .header__nav ul{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .content__exp{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .content__skills{
+        grid-column: 1;
+    }
+    .content__language{
+        grid-column: 2;
+    }
+    .content__contact{
+        grid-column: 3;
+    }
+}
+b, em{
+    color: #2c3e50;
+}
+em{
+    font-style: italic;
+}
+footer{
+    text-align: center;
+    margin-top: 2.4rem;
+    padding: 1.6rem;
+    color: #fff;
+    font-size: 1rem;
 }

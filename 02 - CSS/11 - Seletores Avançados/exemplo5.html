@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados - Pseudo Elementos</title>
+    <style>
+        p{
+            text-align: center;
+        }
+        p::before{
+            content: "<<<< ";
+        }
+        p::after{
+            content: " >>>>";
+        }
+        div::before{
+            content: "";
+            width: 10em;
+            height: 10em;
+            background-color: red;
+            display: block;
+        }
+        div::after{
+            content: url("https://static.vecteezy.com/ti/fotos-gratis/t2/36324708-ai-gerado-cenario-do-uma-tigre-caminhando-dentro-a-floresta-foto.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parágrafo com texto simples.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("Hello World em um arquivo externo")

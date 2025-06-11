@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes</title>
+    <style>
+        button{
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+        button:disabled{
+            background-color: red;
+            color: black;
+        }
+        p:empty::before{
+            content: "Parágrafo vazio";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>Toma</button>
+    <button disabled>Toma só que disabled</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, dignissimos?</p>
+    <p> </p>
+    <p>pós espaço</p>
+    <p></p>
+    <p>pós sem porra nenhuma então toma</p>
+</body>
+</html>
